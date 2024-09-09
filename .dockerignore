@@ -114,4 +114,21 @@ build
 .strapi-updater.json
 .strapi-cloud.json
 
-docker-compose.yml
+
+.editorconfig
+.env.example
+.eslintignore
+.eslintrc
+.gitignore
+README.md
+yarn.lock
+
+.tmp/
+.cache/
+.git/
+.env
+build/
+node_modules/
+# Ignoring folders that might be used in starter templates
+data/
+backup/
