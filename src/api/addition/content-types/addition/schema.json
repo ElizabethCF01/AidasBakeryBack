@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "additions",
+  "info": {
+    "singularName": "addition",
+    "pluralName": "additions",
+    "displayName": "Addition"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
