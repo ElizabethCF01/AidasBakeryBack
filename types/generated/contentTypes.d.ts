@@ -794,6 +794,7 @@ export interface ApiAboutAbout extends Schema.SingleType {
     singularName: 'about';
     pluralName: 'abouts';
     displayName: 'About';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -803,7 +804,7 @@ export interface ApiAboutAbout extends Schema.SingleType {
     description: Attribute.Text;
     invitation: Attribute.String;
     image_description: Attribute.String;
-    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    image: Attribute.Media<'images'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -859,6 +860,7 @@ export interface ApiHeroHero extends Schema.SingleType {
     singularName: 'hero';
     pluralName: 'heroes';
     displayName: 'Hero';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -866,7 +868,7 @@ export interface ApiHeroHero extends Schema.SingleType {
   attributes: {
     title: Attribute.String;
     call_action: Attribute.String;
-    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    image: Attribute.Media<'images'>;
     image_description: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -981,6 +983,7 @@ export interface ApiTeamTeam extends Schema.CollectionType {
     singularName: 'team';
     pluralName: 'teams';
     displayName: 'Team';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -988,7 +991,7 @@ export interface ApiTeamTeam extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
-    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    image: Attribute.Media<'images'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

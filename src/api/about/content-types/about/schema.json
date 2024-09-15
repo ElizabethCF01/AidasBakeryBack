@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "About"
+    "displayName": "About",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,14 +25,12 @@
       "type": "string"
     },
     "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
-      "multiple": true
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
